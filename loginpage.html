@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>LOGIN PAGE</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing:border-box}
+body {font-family: Verdana,sans-serif;}
+.mySlides {display:none}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 500px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 50%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 2.0s;
+  animation-name: fade;
+  animation-duration: 2.0s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+#new_div1{
+background-color:powderblue;
+border:solid;
+width:400px;
+height:300px;
+margin-left:20px;
+padding:50px;
+float:left;
+}
+#new_div2{
+background-color:powderblue;
+border:solid;
+width:400px;
+height:300px;
+margin-left:50px;
+padding:50px;
+float:left;
+}
+#new_div3{
+background-color:powderblue;
+border:solid;
+width:400px;
+height:300px;
+margin-left:40px;
+padding:50px;
+float:right;
+}
+body{background-image: url("image2.jpg");
+}
+</style>
+</head>
+<form>
+<body> 
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 4</div>
+  <img src="slide1.jpg" style="width:100%">
+  <div class="text">Caption Text</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 4</div>
+  <img src="slide2.jpg" style="width:100%">
+  <div class="text">Caption Two</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 4</div>
+  <img src="slide3.jpg" style="width:100%">
+  <div class="text">Caption Three</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">4 / 4</div>
+  <img src="slide4.jpg" style="width:100%">
+  <div class="text">Caption Four</div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span>
+  <span class="dot"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex> slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 5000); // Change image every 2 seconds
+}
+</script>
+<div id="new_div1">
+<table>
+<center><label><u>ADMIN LOGIN</u></label></center><br>
+<tr>
+<th style="text-align:left" ><label>User name</label></th>
+<td><input type="text" name="User Name"></td>
+</tr>
+<tr>
+<th style="text-align:left" ><label>Password</label></th>
+<td><input type="password" name="Password"></td>
+</tr>
+<tr>
+<th style="text-align:left" ><label>Dob</label></th>
+<td><input type="date" name="dob"></td></tr>
+</table><br>
+<center><button><a href="file:///C:/Users/user/Desktop/new%20aligned%20projects/page4.html">SUBMIT</button></center></a>
+</div>
+<div id="new_div2"> 
+<table>
+<center><label><u>STAFF LOGIN</u></label></center><br>
+<tr>
+<th style="text-align:left" ><label>User name</label></th>
+<td><input type="text" name="User Name"></td>
+</tr>
+<tr>
+<th style="text-align:left" ><label>Password</label></th>
+<td><input type="password" name="Password"></td>
+</tr>
+<tr>
+<th style="text-align:left" ><label>Dob</label></th>
+<td><input type="date" name="dob"></td></tr>
+</table><br>
+<center><button><a href="file:///C:/Users/user/Desktop/new%20aligned%20projects/page3.html">SUBMIT</button></center></a>
+</div>
+<div id="new_div3"> 
+<table>
+<center><label><u>STUDENT LOGIN</u></label></center><br>
+<table>
+<tr>
+<th style="text-align:left" ><label>User name</label></th>
+<td><input type="text" name="User Name"></td>
+</tr>
+<tr>
+<th style="text-align:left" ><label>Password</label></th>
+<td><input type="password" name="Password"></td>
+</tr>
+<tr>
+<th style="text-align:left" ><label>Dob</label></th>
+<td><input type="date" name="dob"></td>
+</tr>
+</table><br>
+<center><button><a href="file:///C:/Users/user/Desktop/new%20aligned%20projects/page3.html">SUBMIT</button></center></a>
+</div>
+</body>
+</form>
+</html>
